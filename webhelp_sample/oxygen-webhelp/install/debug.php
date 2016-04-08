@@ -1,0 +1,21 @@
+<?php 
+/*
+    
+Oxygen Webhelp plugin
+Copyright (c) 1998-2015 Syncro Soft SRL, Romania.  All rights reserved.
+Licensed under the terms stated in the license file EULA_Webhelp.txt 
+available in the base directory of this Oxygen Webhelp plugin.
+
+*/
+
+if (!headers_sent()) {
+    header('Content-Type: text/html; charset=utf-8');
+}
+
+phpinfo();
+// enable debug
+define('__DEBUG__', true);
+$baseDir0 = dirname(dirname(__FILE__));
+include $baseDir0.'/resources/php/init.php';
+
+?>
