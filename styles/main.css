@@ -11,14 +11,14 @@ h1 {
 	text-align: center;
 	font-size: 60pt;
 	font-weight: normal;
-	font-family: /*"bikecourier2",*/ "Avenir Next Condensed Ultra Light", "Arial Narrow", sans-serif;
+	font-family: /*"bikecourier2", "Avenir Next Condensed Ultra Light",*/ OpenSansCondensedLight, sans-serif;
 }
 
 h2 {
 	color: #202040;
 	font-size: 30pt;
 	font-weight: normal;
-	font-family: "Avenir Next Condensed Ultra Light", "Arial Narrow", sans-serif;
+	font-family: "Avenir Next Condensed Ultra Light", OpenSansCondensedLight, sans-serif;
 }
 
 p {
@@ -26,6 +26,19 @@ p {
 	font-size: 12pt;
 	font-weight: normal;
 	font-family: "Avenir Next Regular", Arial, sans-serif;
+}
+
+img {
+    box-shadow: 1px 1px 10px #888888;
+}
+
+@fontface {
+	font-family: OpenSansCondensedLight;
+	src: url(OpenSans-CondLight.ttf);
+}
+
+img:hover{
+	box-shadow: 0px 0px;
 }
 
 #wrapper {
@@ -96,6 +109,7 @@ div ul {
 	position:absolute;
     right:0;
     top:0;
+
     cursor:pointer;
     -webkit-transition: right 1s ease-in-out;
     -moz-transition: right 1s ease-in-out;
@@ -106,6 +120,7 @@ div ul {
 .artifact:hover img {
     right: -60%;
     padding-left: 100%;
+    box-shadow: 0px 0px;
 }
 
 .summary {
@@ -159,8 +174,8 @@ a:hover {
 	display: block;
 	width: 40%;
 	height: auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
