@@ -11,7 +11,7 @@ h1 {
 	text-align: center;
 	font-size: 60pt;
 	font-weight: normal;
-	font-family: /*"bikecourier2", "Avenir Next Condensed Ultra Light",*/ OpenSansCondensedLight, sans-serif;
+	font-family: /*"bikecourier2",*/ "Avenir Next Condensed Ultra Light", OpenSansCondensedLight, sans-serif;
 }
 
 h2 {
@@ -32,9 +32,14 @@ img {
     box-shadow: 1px 1px 10px #888888;
 }
 
-@fontface {
+@font-face {
 	font-family: OpenSansCondensedLight;
 	src: url(OpenSans-CondLight.ttf);
+}
+
+@font-face {
+	font-family: Lato-Thin;
+	src: url(Lato-Thin.ttf);
 }
 
 img:hover{
