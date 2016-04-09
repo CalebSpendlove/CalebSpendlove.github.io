@@ -68,6 +68,7 @@ img:hover{
 	text-align: left;
 	width: 90%;
 	min-width: 400px;
+	max-width: 1300px;
 }
 
 .colorBlock {
@@ -86,6 +87,7 @@ div ul {
 .artifact {
     position:relative;
     min-width: 400px;
+    max-width: 541px;
     width: 40%; 
 	height: 700px;
     margin: auto;
@@ -109,12 +111,12 @@ div ul {
 
 .artifact img {
 	width: 100%;
+	max-width: 541px;
 	height: auto;
 	max-height: 700px;
 	position:absolute;
     right:0;
     top:0;
-
     cursor:pointer;
     -webkit-transition: right 1s ease-in-out;
     -moz-transition: right 1s ease-in-out;
