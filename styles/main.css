@@ -50,7 +50,7 @@ img:hover{
 	background-image: url("../media/portfolioBackground.png");
 	background-attachment: fixed;
 	background-position: center;
-	min-width: 400px;
+	min-width: 300px;
 	width: 100%;
 	padding: 0;
 	margin: 0;
@@ -67,7 +67,7 @@ img:hover{
 	margin: auto;
 	text-align: left;
 	width: 90%;
-	min-width: 400px;
+	min-width: 300px;
 	max-width: 1300px;
 }
 
@@ -86,7 +86,7 @@ div ul {
 
 .artifact {
     position:relative;
-    min-width: 400px;
+    min-width: 300px;
     max-width: 541px;
     width: 40%; 
 	height: 700px;
@@ -185,4 +185,23 @@ a:hover {
 	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media screen and (orientation: portrait) {
+	h1 {
+		text-align: left;
+	}
+	#headerButton {
+		top: 30px
+	}
+	.artifact .summary {
+		display: none;
+	}
+	.artifact:hover img {
+		right: 0%;
+		padding-left: 0%;
+	}
+	.footerList {
+		width: 100%;
+	}
 }
